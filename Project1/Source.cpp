@@ -63,10 +63,10 @@ public:
 			vel[2]=velConst+0.05;
 		}
 		else if(key=='a'){
-			vel[0]=-velConst;
+			vel[0]=velConst;
 		}
 		else if(key=='d'){
-			vel[0]=velConst;
+			vel[0]=-velConst;
 		}
 	}
 
