@@ -20,6 +20,13 @@ public:
 };
 class PlayerCtrl{
 public:
+	GLfloat rot[3];
+	GLfloat pos[3];
+	GLfloat sft[3];
+	GLfloat vel[3];
+	GLfloat velConst;
+	Player* p;
+	
 	PlayerCtrl(Player* p){
 		this->p = p;
 		//initailize the array with 0;
@@ -84,13 +91,6 @@ public:
 		pos[2] +=vel[2];
 		printf("pos.z = %f\n",pos[2]);
 	}
-
-	GLfloat rot[3];
-	GLfloat pos[3];
-	GLfloat sft[3];
-	GLfloat vel[3];
-	GLfloat velConst;
-	Player* p;
 };
 
 Player p1;
