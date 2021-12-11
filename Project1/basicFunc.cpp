@@ -13,6 +13,11 @@ void init(){
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
+
+	//GLfloat lightPos[4]={1,8,1,0};
+	//GLfloat lightCol[4]={2,2,2,1};
+	//glLightfv(GL_LIGHT0,GL_POSITION,lightPos);
+	//glLightfv(GL_LIGHT0,GL_DIFFUSE,lightCol);
 }
 
 void idle(){

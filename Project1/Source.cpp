@@ -12,6 +12,8 @@
 extern Player p1=Player();
 extern PlayerCtrl pc1(&p1);
 
+Building b1(5,10,5);
+
 void display(){
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
@@ -33,6 +35,9 @@ void display(){
 		glEnable(GL_LIGHTING);
 	}
 	glPopMatrix();
+
+	b1.setPos(10,1,-70);
+	b1.drawBuilding();
 
 	//cube
 	//static method ,don't need instance
